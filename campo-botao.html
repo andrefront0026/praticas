@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>digite seu numero</button>
+
+<script>
+
+
+var numero = 2;
+var input = document.querySelector("input");
+
+function guarda() {
+
+    if(numero == input.value) {
+
+      alert("você acertou !!!");
+
+    } else {
+
+      alert("você errou !!!!!!");
+    } 
+}
+
+var button = document.querySelector("button");
+button.onclick = guarda;
+
+</script>
