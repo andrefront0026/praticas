@@ -5,28 +5,28 @@
 
 <script>
 
-var segredo = Math.round(Math.random() * 10);
-
 var input = document.querySelector("input");
 
+      var segredo = Math.round(Math.random() * 10);
+      
+    function guarda() {
+      
+        if(input.value == segredo) {
 
-      function guarda() {
-
-      if(input.value == segredo) {
-
-      alert("Parabéns você acertou !!!!!!!!");
+        alert("parabéns você acertou !!!!!!");
 
       } else {
 
-      alert("infelizmente você errou !!!!! tente outra vez");
+        alert("infelizmente você errou !!!! tente outra vez");
 
-    }
+      }
         input.value = "";
         input.focus();
-  }
+    } 
 
 
-  var button = document.querySelector("button");
+var button = document.querySelector("button");
     button.onclick = guarda;
+
 
 </script>
