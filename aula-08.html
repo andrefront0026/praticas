@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <script>
 
-function pulaLinha() {
+function pulaLinha () {
     document.write("<br>");
     document.write("<br>");
 }
@@ -11,26 +11,26 @@ function mostra(frase) {
     pulaLinha();
 }
 
-
 var numeroPensado = Math.round(Math.random() * 10);
+
 var tentativas = 1;
 
 while(tentativas <= 3) {
-
     var numero = parseInt(prompt("entre com o número"));
 
     if(numero == numeroPensado) {
-
-        mostra("parabéns você acertou");
+        mostra("parabéns você acertou !!!!!!");
         break;
 
     } else {
 
-        mostra("você errou o número pensado foi " + numeroPensado);
+        mostra("infelizmente você errou !!!!!!!!!!!!!!  " + numeroPensado);
     }
     tentativas++;
 }
 
 mostra("FIM");
+
+
 
 </script>
