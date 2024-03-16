@@ -7,26 +7,24 @@
 
 var input = document.querySelector("input");
 
-      var segredo = Math.round(Math.random() * 10);
-      
-    function guarda() {
-      
-        if(input.value == segredo) {
+var segredo =Math.round(Math.random() * 10);
 
-        alert("parabéns você acertou !!!!!!");
+function guarda() {
 
-      } else {
+      if(input.value == segredo) {
 
-        alert("infelizmente você errou !!!! tente outra vez");
+    alert("parabéns você acertou !!!!!");
 
-      }
-        input.value = "";
-        input.focus();
-    } 
+    } else {
 
+    alert("infelizmente você errou !!!! tente outra vez");
+
+    }
+    input.value = "";
+    input.focus();
+}
 
 var button = document.querySelector("button");
-    button.onclick = guarda;
-
+button.onclick = guarda;
 
 </script>
